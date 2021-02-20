@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Ninnin portfoliosivu</title>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet"> 
+	<!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<style>
+	body {
+	font-family: 'Rubik', sans-serif;
+	margin: 0px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 30px;
+}
+
+/* Navi */
+
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+}
+
+.vasen {
+	display: flex;
+	font-size: 25px;
+}
+
+.oikea {
+	font-size: 25px;
+}
+
+.nav-wrapper > .vasen > div {
+	margin-right: 20px;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.link-wrapper {
+	height: 25px;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.5s;
+}
+
+.link-wrapper a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.link-wrapper:hover {
+	border-bottom: 1px solid black;
+}
+
+.link-wrapper a:hover {
+	color: black;
+}
+
+.active-nav-link {
+	border-bottom: 1px solid black;	
+}
+
+.active-nav-link a {
+	color: black !important;
+}
+
+/* Portfolio */
+
+.content-wrapper .info {
+	font-size: 20px;
+	margin-left: 0px;
+	padding: 10px;
+}
+
+.pf-items-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pf-singular {
+	position: relative;
+	padding: 7px;
+}
+
+.pf-img-bg {
+	height: 350px;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+}
+
+.img-txt-wrapper {
+	position: absolute;
+	top: 0;
+	font-size: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: left;
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.img-txt-wrapper .subtitle {
+	transition: 0.5s;
+	font-weight: 300;
+	font-size: 20px;
+	color: transparent;
+}
+
+.img-txt-wrapper:hover .subtitle {
+	font-weight: 300;
+	font-size: 20px;
+	color: white;
+}
+
+.img-darken {
+	transition: 0.5s;
+	filter: brightness(5%);
+}
+</style>
+
+<body>
+	<div class="container">
+		<div class="nav-wrapper">
+			<div class="vasen">
+				<div class="link-wrapper active-nav-link">
+					<a href="index.html">Portfolio</a>
+				</div>
+				
+				<div class="link-wrapper">
+				</div>
+			</div>
+			
+			<div class="oikea">
+				<div class="nimi">
+					<div>NINA KOVALJEFF</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="content-wrapper">
+			<div class="info">Vie hiiri kuvan päälle, niin näet, mistä on kyse!</div>
+			<div class="pf-items-wrapper">
+			
+			<div class="pf-singular">
+				<div class="pf-img-bg" style="background-image:url(https://64.media.tumblr.com/76b3303f338da74845dcc6a78f67d71b/492b8ec37ec5dcd0-0c/s640x960/453f952163fcd9ee029e4d84cb5cd6042af81d2d.jpg)"></div>
+					<div class="img-txt-wrapper">
+						<div class="subtitle">Ilmeeni, kun ajattelen tätä kesätyöpaikkaa...</div>
+					</div>	
+				</div>
+
+			<div class="pf-singular">
+				<div class="pf-img-bg" style="background-image:url(https://64.media.tumblr.com/0d1504425c94b88e8ec924b159495f13/492b8ec37ec5dcd0-a8/s2048x3072/ed8045dcb360dd67950f44cc9ad2c0550653ac8c.jpg)"></div>
+					<div class="img-txt-wrapper">
+						<div class="subtitle">Moi! Tämä olen minä, Nina 31 vee :)</div>
+					</div>
+				</div>
+
+			<div class="pf-singular">
+				<div class="pf-img-bg" style="background-image:url(https://64.media.tumblr.com/0df5976f7fafb908fdce239effbb961b/492b8ec37ec5dcd0-f6/s2048x3072/120ec5a3afa875309f472b608c462b76da335880.jpg)"></div>
+					<div class="img-txt-wrapper">
+						<div class="subtitle">Olen vasta valmistunut tradenomi, ja vaikka kokemukseni alalta on vielä köykäistä, on intoa ja tahtoa oppia lisää ja kehittää jo hankittua osaamista sitäkin enemmän.</div>
+					</div>
+				</div>
+
+			<div class="pf-singular">
+				<div class="pf-img-bg" style="background-image:url(https://64.media.tumblr.com/85881bc1d4ece61624aba2b3b56a1cbb/492b8ec37ec5dcd0-b1/s640x960/71be9d9933d4d34c4a6c5452626da57dec9824be.png)"></div>
+					<div class="img-txt-wrapper">
+						<div class="subtitle">Etenkin front end -ohjelmointi on intohimoni, mutta koko pakka edestä taakse ja takaisin on hallussa, käyttöliittymästä ohjelmakoodin kautta tietokantaan. Mitä en osaa, sen opettelen, enkä suinkaan jää headdeskaamaan läppäriin.</div>
+					</div>
+				</div>
+			
+			
+			<div class="pf-singular">
+					<div class="pf-img-bg" style="background-image:url(https://64.media.tumblr.com/04472d87e1a4c2e3542fca462b261689/492b8ec37ec5dcd0-b1/s1280x1920/43aadad548a0d1911ce5c9664aaedca0582de9ec.jpg)"></div>
+						<div class="img-txt-wrapper">
+							<div class="subtitle">Fiiliksen toivoisi joka päivä olevan sama kuin tällä irlantilaisella rallikuskilla, ja olen varma, että teidän kanssa se sitä olisi! (Ja joo, tykkään muuten moottoriurheilusta.)</div>'
+						</div>
+					</div>
+			
+			<div class="pf-singular">
+					<div class="pf-img-bg" style="background-image:url(https://64.media.tumblr.com/9b553cc5cd9e456ac84961d9bf90f55e/492b8ec37ec5dcd0-6f/s640x960/be12155ff1682e9a0627c075c3451e07b6c5fbd9.jpg)"></div>
+						<div class="img-txt-wrapper">
+							<div class="subtitle">Minua motivoi paitsi oppiminen ja omannäköiseltä tuntuva vaihteleva työ, myös työkaverit ja hyvä tiimihenki. Työn tekeminen ja työssä kehittyminen sekä ongelmien ratkaisu on hyvässä porukassa aina helpompaa :)</div>
+						</div>
+					</div>
+
+			<div class="pf-singular">
+				<div class="pf-img-bg" style="background-image:url(https://64.media.tumblr.com/5d2980de8df90671d7c5c07de6829f3f/492b8ec37ec5dcd0-84/s500x750/4999600e3c460afbf2e0a0c499c25944650ca55f.png)"></div>
+					<div class="img-txt-wrapper">
+						<div class="subtitle">Olen työssäni tarkka ja tunnollinen, ja jos koodissa on bugi, uurastan ongelman löytämiseksi kunnes jokainen puolipiste ja kaarisulku on paikallaan.</div>
+					</div>
+				</div>
+			
+			<div class="pf-singular">
+					<div class="pf-img-bg" style="background-image:url(https://64.media.tumblr.com/5a672f407914135a69d0fae44f9be44e/492b8ec37ec5dcd0-2d/s2048x3072/8ec8982f391cedffc961893d9b7334b6a9cd1c1b.jpg)"></div>
+						<div class="img-txt-wrapper">
+							<div class="subtitle">Ketterät menetelmät eivät ole vieraita. Taivun työskentelyyn niin itsenäisesti kuin ryhmässä, sprintistä sprinttiin, ja ymmärrän myös laadukkaan ja siistin koodin merkityksen.</div>
+						</div>
+					</div>
+
+			<div class="pf-singular">
+				<div class="pf-img-bg" style="background-image:url(https://64.media.tumblr.com/e08c6612ae36a6a01152c4fe5e5f4ef3/492b8ec37ec5dcd0-2a/s1280x1920/7d01c67bed77e651147df6224cb3c657bb774d80.jpg)"></div>
+					<div class="img-txt-wrapper">
+						<div class="subtitle">(Ja ymmärrän myös, miksi tämä on ihan sikahauska vitsi.)</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script>
+	const pfItems = document.querySelectorAll('.pf-singular')
+	pfItems.forEach(pfItem => {
+		pfItem.addEventListener('mouseover', () => {
+			pfItem.childNodes[1].classList.add('img-darken');
+		})
+		
+		pfItem.addEventListener('mouseout', () => {
+			pfItem.childNodes[1].classList.remove('img-darken');
+		})
+	})
+</script>
+</html>
